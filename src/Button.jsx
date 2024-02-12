@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Button = ({ string }) => {
   const text = string;
 
   return (
     <button className={text.toLowerCase()}>
-      <a href={`/${text.toLowerCase()}`}>{text}</a>
+      <Link to={`${text.toLowerCase()}`}>{text}</Link>
     </button>
   );
 };

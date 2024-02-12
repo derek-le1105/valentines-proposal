@@ -1,5 +1,5 @@
 import Happy from "./assets/happy.gif";
-import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Yes = () => {
   return (
@@ -8,6 +8,9 @@ const Yes = () => {
       <div>
         <img src={Happy} className="logo" />
       </div>
+      <button>
+        <Link to={"/"}>Go back</Link>
+      </button>
     </>
   );
 };

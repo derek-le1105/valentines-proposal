@@ -5,21 +5,21 @@ import ErrorPage from "./ErrorPage.jsx";
 import Yes from "./Yes.jsx";
 import No from "./No.jsx";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/yes",
+    path: "yes",
     element: <Yes />,
   },
   {
-    path: "/no",
+    path: "no",
     element: <No />,
   },
 ]);

@@ -1,4 +1,5 @@
 import nope from "./assets/no.gif";
+import { Link } from "react-router-dom";
 
 const No = () => {
   return (
@@ -8,7 +9,7 @@ const No = () => {
         <img src={nope} className="logo" />
       </div>
       <button>
-        <a href="/">try again</a>
+        <Link to={"/"}>try again</Link>
       </button>
     </>
   );
